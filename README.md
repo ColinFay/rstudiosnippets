@@ -11,10 +11,10 @@ snippet R6
 		public = list(
 			initialize = function() {
 		
-		},
-		finalize = function() {
+			},
+			finalize = function() {
 	
-		}
+			}
 		), 
 		private = list(
 	
@@ -29,3 +29,24 @@ snippet todo
 	# TODO ${0:what}
 ```
 
+## Functionnal Shiny App
+
+```
+snippet shinyapp
+	library(shiny)
+	ui <- function(request){
+		tagList(
+		
+		)
+	}
+	
+	server <- function(
+		input, 
+		output, 
+		session
+	){
+	
+	}
+	
+	shinyApp(ui, server)
+```
